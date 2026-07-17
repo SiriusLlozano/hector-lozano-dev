@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héctor | Dev Portfolio</title>
+    <meta
+      name="description"
+      content="Portafolio profesional de Héctor - Estudiante de Desarrollo de Software y Backend Developer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <span class="brand-name">Héctor Lozano</span>
+          <span class="brand-accent">Dev Portfolio</span>
+        </div>
+        <button class="menu-toggle" aria-label="Menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" role="navigation">
+          <a href="#inicio" class="active">Inicio</a>
+          <a href="#about">Mi historia</a>
+          <a href="#experience">Experiencia Laboral</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="inicio" class="hero">
+        <div class="hero-video-bg">
+          <video autoplay muted loop class="hero-video" poster="img/hero-poster.jpg">
+            <source src="img/hero-bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="hero-greeting">¡Hola!</p>
+          <h1 class="hero-title">
+            Soy <span class="accent">Héctor Lozano</span>
+          </h1>
+          <p class="hero-subtitle">Estudiante de Desarrollo de Software & Aspirante a Arquitecto Backend</p>
+          <p class="hero-description">
+            Me especializo en el desarrollo de lógica de negocio del lado del servidor, diseñando bases de datos relacionales robustas y APIs estructuradas con Node.js, Express y PostgreSQL.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span class="icon">✉</span> Contáctame
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span class="icon">in</span> LinkedIn
+            </a>
+            <a href="#" class="btn btn-secondary">
+              <span class="icon">↓</span> Descargar CV
+            </a>
+          </div>
+
+          <div class="hero-nav-arrows">
+            <button class="arrow-btn arrow-prev" aria-label="Anterior">‹</button>
+            <button class="arrow-btn arrow-next" aria-label="Siguiente">›</button>
+          </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+          <span>↓</span>
+        </div>
+      </section>
+
+<!-- ABOUT SECTION (Agregada y Maquetada) -->
+      <section id="about" class="about">
+        <div class="about-container">
+          <h2 class="section-title">Acerca de mí</h2>
+
+          <!-- Bloque Superior: Foto + Texto Principal -->
+          <div class="about-top-row">
+            <div class="about-image-wrapper">
+              <div class="profile-circle">
+                <img src="img/profile.jpg" alt="Héctor" />
+              </div>
+            </div>
+            <div class="about-text-wrapper">
+              <div class="vertical-divider-content">
+                <p>
+                  Estudiante de Desarrollo de Software en **IDAT** (III Ciclo) con miras a convalidar Ingeniería de Software en la **UPC**. Mi meta es consolidarme como **Arquitecto de Software** backend.
+                </p>
+                <p>
+                  Me apasiona el diseño de sistemas seguros y escalables. Busco siempre el equilibrio perfecto entre la **excelencia técnica** y la **estrategia de negocio**.
+                </p>
+                <p>
+                  Enfocado en la creación de APIs robustas, optimización de consultas y la implementación de buenas prácticas de desarrollo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloque Inferior: Filosofía de código + Tarjeta Destacada -->
+          <div class="about-bottom-row">
+            <div class="about-bottom-left">
+              <p>
+                Especializándome en el desarrollo backend con **Node.js, Express y PostgreSQL**. Aplico metodologías como **TDD** y principios de **Clean Code** para garantizar que cada línea de código sea limpia, legible y altamente mantenible.
+              </p>
+              <p>
+                Actualmente lidero el desarrollo de **Sirbull Banking Core**, un backend transaccional enfocado en la seguridad, rendimiento y optimización de bases de datos relacionales mediante procedimientos almacenados.
+              </p>
+            </div>
+            <div class="about-bottom-right">
+              <div class="highlight-card">
+                <p class="card-question">"¿Buscas a alguien que se arremanga, prioriza y cumple?"</p>
+                <p class="card-bold">Podemos construir grandes cosas juntos.</p>
+                <p class="card-desc">
+                  Combinar esfuerzo, visión de producto, pasión técnica, verdadero trabajo en equipo y adaptabilidad ante cualquier desafío.
+                </p>
+                <p class="card-action">¡Vamos a por ello!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="experience">
+        <div class="section-container">
+          <h2 class="section-title">Enfoque Técnico</h2>
+
+          <div class="experience-grid">
+            <article class="experience-card">
+              <h3>Desarrollo Backend</h3>
+              <p>
+                Construcción de servidores robustos con Node.js y Express, gestionando correctamente el flujo de peticiones, enrutamiento, controladores de negocio y middleware de seguridad.
+              </p>
+            </article>
+
+            <article class="experience-card">
+              <h3>Diseño de Base de Datos</h3>
+              <p>
+                Modelado relacional estructurado en PostgreSQL, implementando lógica transaccional mediante consultas directas y optimización de procedimientos almacenados.
+              </p>
+            </article>
+
+            <article class="experience-card">
+              <h3>Calidad de Código</h3>
+              <p>
+                Estructuración de código legible y mantenible mediante la separación de capas, minimizando el acoplamiento y promoviendo el testing unitario para validar flujos críticos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL STACK SECTION -->
+      <section id="stack" class="stack">
+        <div class="section-container">
+          <h2 class="section-title">Stack Técnico</h2>
+
+          <div class="stack-grid">
+            <!-- Languages & Tools -->
+            <div class="stack-category">
+              <h3 class="stack-category-title">
+                <span class="icon">&lt;/&gt;</span> Tecnologías Core
+              </h3>
+              <div class="stack-items">
+                <div class="stack-item">
+                  <span class="tech-name">Node.js</span>
+                  <span class="tech-desc">Entorno de ejecución backend</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">Express</span>
+                  <span class="tech-desc">Framework para la gestión de APIs</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">JavaScript</span>
+                  <span class="tech-desc">Lenguaje principal de programación</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">FileZilla</span>
+                  <span class="tech-desc">Gestión y transferencia básica de archivos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="stack-category">
+              <h3 class="stack-category-title">
+                <span class="icon">🗄</span> Bases de Datos
+              </h3>
+              <div class="stack-items">
+                <div class="stack-item">
+                  <span class="tech-name">PostgreSQL</span>
+                  <span class="tech-desc">Gestor de base de datos relacional</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">SQL Procedures</span>
+                  <span class="tech-desc">Procedimientos almacenados y funciones</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">Database Queries</span>
+                  <span class="tech-desc">Consultas estructuradas y relacionales</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testing & Quality -->
+            <div class="stack-category">
+              <h3 class="stack-category-title">
+                <span class="icon">✓</span> Metodologías & Testing
+              </h3>
+              <div class="stack-items">
+                <div class="stack-item">
+                  <span class="tech-name">TDD</span>
+                  <span class="tech-desc">Desarrollo guiado por pruebas</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">Clean Code</span>
+                  <span class="tech-desc">Código limpio, legible y autodocumentado</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">Git</span>
+                  <span class="tech-desc">Control de versiones para el código</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="stack-category">
+              <h3 class="stack-category-title">
+                <span class="icon">🎨</span> Maquetación Frontend
+              </h3>
+              <div class="stack-items">
+                <div class="stack-item">
+                  <span class="tech-name">HTML5</span>
+                  <span class="tech-desc">Estructuración semántica del contenido</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">CSS3</span>
+                  <span class="tech-desc">Diseño adaptable, Grid y Flexbox</span>
+                </div>
+                <div class="stack-item">
+                  <span class="tech-name">JS Vanilla</span>
+                  <span class="tech-desc">Interactividad nativa en el navegador</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects">
+        <div class="section-container">
+          <h2 class="section-title">Mis Proyectos y Desarrollos</h2>
+
+          <div class="projects-filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="backend">BACKEND</button>
+            <button class="filter-btn" data-filter="banking">BANKING</button>
+            <button class="filter-btn" data-filter="architecture">ARCHITECTURE</button>
+            <button class="filter-btn" data-filter="testing">TESTING</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-category="backend banking">
+              <div class="project-image">
+                <img src="img/project-sirbull.jpg" alt="Sirbull Banking Core" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull Banking Core</h3>
+                <p>
+                  Backend transaccional para operaciones bancarias. Maneja la consistencia de las cuentas, transferencias seguras y registros de auditoría en la base de datos.
+                </p>
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>PostgreSQL</span>
+                  <span>Express</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="architecture banking">
+              <div class="project-image">
+                <img src="img/project-architecture.jpg" alt="Arquitectura Sirbull" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull: Capa de Controladores</h3>
+                <p>
+                  Estructuración del flujo de peticiones HTTP en Sirbull Banking Core, desacoplando los puntos de entrada (rutas y controladores) de las consultas directas de datos.
+                </p>
+                <div class="project-tech">
+                  <span>Express</span>
+                  <span>Clean Architecture</span>
+                  <span>Software Design</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="testing">
+              <div class="project-image">
+                <img src="img/project-testing.jpg" alt="Suite de Testing Sirbull" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull: Metodología TDD</h3>
+                <p>
+                  Planificación de pruebas lógicas para asegurar el correcto procesamiento de transacciones financieras antes de escribir el código de producción.
+                </p>
+                <div class="project-tech">
+                  <span>TDD</span>
+                  <span>Unit Testing</span>
+                  <span>Clean Code</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="backend banking">
+              <div class="project-image">
+                <img src="img/project-api.jpg" alt="API REST Transaccional" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull: Lógica de Negocio</h3>
+                <p>
+                  Diseño de los endpoints transaccionales del core bancario, controlando el flujo de depósitos y retiros mediante validación estricta de parámetros en el servidor.
+                </p>
+                <div class="project-tech">
+                  <span>Express API</span>
+                  <span>Backend</span>
+                  <span>REST</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="banking">
+              <div class="project-image">
+                <img src="img/project-persistence.jpg" alt="Persistencia de Datos" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull: Persistencia y SQL</h3>
+                <p>
+                  Modelado relacional avanzado en PostgreSQL utilizando procedimientos almacenados (stored procedures) y consultas preparadas para mitigar riesgos de inyección SQL.
+                </p>
+                <div class="project-tech">
+                  <span>PostgreSQL</span>
+                  <span>Stored Procedures</span>
+                  <span>SQL Queries</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="architecture backend">
+              <div class="project-image">
+                <img src="img/project-security.jpg" alt="Sirbull Seguridad" />
+              </div>
+              <div class="project-info">
+                <h3>Sirbull: Capa de Seguridad</h3>
+                <p>
+                  Diseño de middlewares de autenticación y lógica para la protección y encriptación de datos sensibles dentro del flujo de transacciones bancarias.
+                </p>
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>Cryptography</span>
+                  <span>Backend Security</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section id="certifications" class="certifications">
+        <div class="section-container">
+          <h2 class="section-title">Hitos de Formación</h2>
+
+          <div class="certifications-grid">
+            <article class="cert-card">
+              <div class="cert-image">
+                <img src="img/cert-1.jpg" alt="Estudios IDAT" />
+              </div>
+              <h3>Carrera de Desarrollo de Software</h3>
+              <p class="cert-issuer">IDAT (En curso - III Ciclo)</p>
+              <a href="#" class="cert-link">Plan Curricular →</a>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-image">
+                <img src="img/cert-2.jpg" alt="PostgreSQL" />
+              </div>
+              <h3>Diseño e Implementación de Bases de Datos</h3>
+              <p class="cert-issuer">Formación en PostgreSQL & SQL</p>
+              <a href="#" class="cert-link">Consultas y Procedimientos →</a>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-image">
+                <img src="img/cert-3.jpg" alt="Clean Code" />
+              </div>
+              <h3>Principios de Diseño de Software</h3>
+              <p class="cert-issuer">Autoaprendizaje en TDD y Clean Code</p>
+              <a href="#" class="cert-link">Buenas Prácticas Aplicadas →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="section-container">
+          <div class="contact-card">
+            <h2>¿Listo para colaborar?</h2>
+            <p>
+              Si buscas un desarrollador backend enfocado en la disciplina de la ingeniería de software, buenas prácticas de codificación y base de datos relacionales, estaré encantado de conversar.
+            </p>
+            <a href="mailto:hector@example.com" class="btn btn-primary btn-large">
+              Envíame un mensaje
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; <span id="year"></span> Héctor. Diseñado con enfoque en arquitectura y excelencia técnica.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
